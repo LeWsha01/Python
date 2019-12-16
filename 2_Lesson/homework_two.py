@@ -1,5 +1,6 @@
 
 
+
 def first_task(lst_f):
     print(lst_f[0::len(lst_f) - 1])
 
