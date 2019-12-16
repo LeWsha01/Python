@@ -110,6 +110,7 @@
       <workItem from="1576492141788" duration="105000" />
       <workItem from="1576492388775" duration="882000" />
       <workItem from="1576494837219" duration="1226000" />
+      <workItem from="1576496930751" duration="2375000" />
     </task>
     <servers />
   </component>
@@ -121,34 +122,38 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="234" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1576493277230" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1576496096454">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1576500853643">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576496096454" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1576496096453">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576500853643" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1576500853641">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1576496096453" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1576496096452">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1576500853641" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1576500853640">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1576496096452" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1576496096454">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1576500853640" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1576500853642">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576496096454" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576500853642" />
     <state x="149" y="23" key="SettingsEditor" timestamp="1576255255815">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="23" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1576255255815" />
-    <state x="319" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1576494864362">
+    <state x="319" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1576496939474">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="319" y="234" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1576494864362" />
+    <state x="319" y="234" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1576496939474" />
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog/0.23.1280.716@0.23.1280.716" timestamp="1576492146703" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1576497287943">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1576497287943" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/2_Lesson$homework_two.coverage" NAME="homework_two Coverage Results" MODIFIED="1576496056651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/2_Lesson$homework_two.coverage" NAME="homework_two Coverage Results" MODIFIED="1576497157470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/2_Lesson$Lesson_two.coverage" NAME="Lesson_two Coverage Results" MODIFIED="1576492889687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
