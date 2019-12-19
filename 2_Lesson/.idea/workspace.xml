@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ced3069b-235e-4d63-95e4-9d717be7a889" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/2_Lesson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2_Lesson.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework_two.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework_two.py" afterDir="false" />
     </list>
@@ -9,6 +11,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -29,6 +45,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -49,6 +66,28 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson_two.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="2_Lesson" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -111,6 +150,8 @@
       <workItem from="1576492388775" duration="882000" />
       <workItem from="1576494837219" duration="1226000" />
       <workItem from="1576496930751" duration="2375000" />
+      <workItem from="1576758126053" duration="8953000" />
+      <workItem from="1576773334387" duration="229000" />
     </task>
     <servers />
   </component>
@@ -122,38 +163,38 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="234" y="2" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1576493277230" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1576500853643">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1576773325642">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576500853643" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1576500853641">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576773325642" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1576773325640">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1576500853641" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1576500853640">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1576773325640" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1576773325639">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1576500853640" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1576500853642">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1576773325639" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1576773325641">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576500853642" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576773325641" />
     <state x="149" y="23" key="SettingsEditor" timestamp="1576255255815">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="23" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1576255255815" />
-    <state x="319" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1576496939474">
+    <state x="319" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1576758136140">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="319" y="234" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1576496939474" />
+    <state x="319" y="234" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1576758136140" />
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog/0.23.1280.716@0.23.1280.716" timestamp="1576492146703" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1576497287943">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1576769975494">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1576497287943" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1576769975494" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/2_Lesson$homework_two.coverage" NAME="homework_two Coverage Results" MODIFIED="1576497157470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/2_Lesson$homework_two.coverage" NAME="homework_two Coverage Results" MODIFIED="1576770297579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/2_Lesson$Lesson_two.coverage" NAME="Lesson_two Coverage Results" MODIFIED="1576492889687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
