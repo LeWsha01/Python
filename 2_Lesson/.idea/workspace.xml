@@ -4,10 +4,13 @@
     <list default="true" id="ced3069b-235e-4d63-95e4-9d717be7a889" name="Default Changelist" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/2_Lesson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2_Lesson.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> develop
+=======
 >>>>>>> develop
 =======
 >>>>>>> develop
@@ -162,6 +165,11 @@
       <workItem from="1576758126053" duration="8953000" />
       <workItem from="1576773334387" duration="229000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> develop
+=======
+      <workItem from="1576856257188" duration="282000" />
+      <workItem from="1576857097648" duration="507000" />
 >>>>>>> develop
 =======
       <workItem from="1576856257188" duration="282000" />
