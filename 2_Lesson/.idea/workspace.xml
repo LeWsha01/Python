@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ced3069b-235e-4d63-95e4-9d717be7a889" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/2_Lesson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2_Lesson.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_two.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework_two.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +149,7 @@
       <workItem from="1576496930751" duration="2375000" />
       <workItem from="1576758126053" duration="8953000" />
       <workItem from="1576773334387" duration="229000" />
+      <workItem from="1576856257188" duration="116000" />
     </task>
     <servers />
   </component>
@@ -183,10 +181,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="149" y="23" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1576255255815" />
-    <state x="319" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1576758136140">
+    <state x="319" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1576856257412">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="319" y="234" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1576758136140" />
+    <state x="319" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1576856257412" />
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog/0.23.1280.716@0.23.1280.716" timestamp="1576492146703" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1576769975494">
       <screen x="0" y="0" width="1280" height="800" />
