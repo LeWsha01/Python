@@ -7,9 +7,9 @@ def func(a_2, b_2):
             flag = True
             break
     if flag:
-        print('True')
+        print(flag)
     else:
-        print('False')
+        print(flag)
 
 
 a = 5
