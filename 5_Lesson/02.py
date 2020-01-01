@@ -13,6 +13,5 @@ def split_word_with_method(str_m):
 
 
 def split_word_with_regular(str_re):
-    \b\w{3}
-srt_me = input('Enter string: ')
-split_word_with_method(srt_me)
+    srt_me = input('Enter string: ')
+    split_word_with_method(srt_me)
