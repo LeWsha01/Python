@@ -17,11 +17,11 @@ def domain_for_string(dom):
 
 def domain_for_regular(dom):
     for item in dom:
-        print(re.findall(r'(\@[a-zA-Z0-9-]*)?\.', item), end=', ')
+        print(re.findall(r'@\w+', item), end=', ')
 
 
 domain_for_regular(domains)
-domain_for_string(domains)
+#domain_for_string(domains)
 
 
 
