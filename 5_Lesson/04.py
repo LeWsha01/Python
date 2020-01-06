@@ -3,8 +3,7 @@ import re
 
 
 def date_in_text(string):
-    date = []
-    date += datetime(re.findall(r'(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d', string))
+    date = re.findall(r'((0[1-9]|[12]\d|3[01])-(0[1-9]|1[0-2])-[12]\d{3})', string)
     print(date)
 
 
