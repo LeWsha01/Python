@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 .idea/
 .DS_Store
+venv/
 =======
 .idea
 .DS_Store
