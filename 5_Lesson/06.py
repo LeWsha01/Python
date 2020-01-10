@@ -1,12 +1,8 @@
 
 
 def convert_spaces(string):
-    print(string, '-> ', end='')
-    for item in string:
-        if str.isspace(item):
-            print('-', end='')
-        else:
-            print(item, end='')
+    string_new = string.replace(' ', '-')
+    print(string, '->', string_new)
 
 
 string_spaces = 'Hello World MFK!!'
