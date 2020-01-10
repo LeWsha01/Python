@@ -2,16 +2,13 @@
 
 def func(a_2, b_2):
     flag = False
-    for values in b_2:
-        if a_2 == b_2[values]:
-            flag = True
-            break
-    if flag:
+    if a_2 in b_2.values():
+        flag = True
         print(flag)
     else:
         print(flag)
 
 
-a = 5
-b = {'foo': 5, 'bar': 8}
+a = 8
+b = {'foo': 2, 'bar': 8}
 func(a, b)
