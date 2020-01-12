@@ -39,4 +39,5 @@ def look_up(direct, text):
 
 args = argument_parser()
 look_up(args.dir, args.text)
-
+for root, sub_dirs, files in os.walk(args.dir):
+    print(root)
