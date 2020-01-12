@@ -13,8 +13,8 @@ def argument_parser():
 
 def find_text(file, text):
     with open(file, 'rb') as myFile:
-        print('In this file -> {}, search text -> {}'.format(file, text))
-        for num, line in enumerate(str(myFile), 1):
+        print('Open this file -> {}'.format(file))
+        for num, line in enumerate(myFile, 1):
             if text in str(line):
                 print('Found at line: {} -> {}'.format(num, line))
             # else:
@@ -39,5 +39,3 @@ def look_up(direct, text):
 
 args = argument_parser()
 look_up(args.dir, args.text)
-for root, sub_dirs, files in os.walk(args.dir):
-    print(root)
