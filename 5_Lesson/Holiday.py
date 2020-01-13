@@ -18,9 +18,11 @@ def find_text(files, text):
         with open(file, 'rb') as myFile:
             print('Open this file -> {}'.format(file))
             for num, line in enumerate(myFile, 1):
-                if text in str(line) and count <= 100:
+                if text in str(line) and count <= 99:
                     count += 1
                     print('Found at line: {} -> {}'.format(num, line))
+                elif count > 99:
+                    break
     print('Count = {}'.format(count))
 
 
