@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+from sys import getdefaultencoding
 import argparse
 import os
 
@@ -11,14 +12,16 @@ def argument_parser():
     return parser.parse_args()
 
 
-def find_text(file, text):
-    with open(file, 'rb') as myFile:
-        print('Open this file -> {}'.format(file))
-        for num, line in enumerate(myFile, 1):
-            if text in str(line):
-                print('Found at line: {} -> {}'.format(num, line))
-            # else:
-            #     print('False')
+def find_text(files, text):
+    count = 0
+    for file in files:
+        with open(file, 'rb') as myFile:
+            print('Open this file -> {}'.format(file))
+            for num, line in enumerate(myFile, 1):
+                if text in str(line) and count <= 100:
+                    count += 1
+                    print('Found at line: {} -> {}'.format(num, line))
+    print('Count = {}'.format(count))
 
 
 def walk_dir(directory):
@@ -31,10 +34,7 @@ def walk_dir(directory):
 
 def look_up(direct, text):
     files = walk_dir(direct)
-    result = []
-    for file in files:
-        result = find_text(file, text)
-    print(result)
+    find_text(files, text)
 
 
 args = argument_parser()
