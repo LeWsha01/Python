@@ -4,13 +4,13 @@ import json
 """The program converts data from a .json file to a .csv file."""
 
 
-def csv_writer(data, p):
+def csv_writer(data, path):
     field_names = []
-    for key in data:  # Получаем имена колонок
-        for k in key:
-            if k not in field_names:
-                field_names.append(k)
-    with open(p, 'w') as csv_file:
+    for row in data:  # Получаем имена колонок
+        for key in row:
+            if key not in field_names:
+                field_names.append(key)
+    with open(path, 'w') as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=field_names)
         writer.writeheader()
         writer.writerows(data)
@@ -28,4 +28,3 @@ if __name__ == '__main__':
     path_json = 'json_file.json'  # Путь к json файлу
     obj = json_reader(path_json)
     csv_writer(obj, path_csv)
-    print(__doc__)

@@ -8,5 +8,11 @@
         "name": "John",
         "age": 22,
         "country": "Belarus"
+    },
+    {
+        "name": "Oleg",
+        "age": 29,
+        "is_student": false,
+        "country": "USA"
     }
 ]
