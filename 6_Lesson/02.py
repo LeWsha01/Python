@@ -42,11 +42,9 @@ def excel_change(file):
 
     for row_index in range(1, row + 1):
         res[sheet.cell(row_index, 2).value] = {
-                'Name Surname': {
                         'marks': lists_marks[inx],
                         'average_marks': sum(lists_marks[inx]) / len(lists_marks[inx])
                     }
-                }
 
         inx += 1
 
