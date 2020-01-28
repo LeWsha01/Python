@@ -1,1 +1,71 @@
-{"Unnamed: 0":{"0":null,"1":null,"2":null,"3":null,"4":null},"Bob Hardy":{"0":"Ann Dier","1":"Kate Rose","2":"Jane Winks","3":"Toby Celso","4":"Danny  Alli"},"Unnamed: 2":{"0":null,"1":null,"2":null,"3":null,"4":null},"9":{"0":4.0,"1":6.0,"2":5.0,"3":null,"4":null},"8":{"0":null,"1":8.0,"2":5.0,"3":9.0,"4":null},"Unnamed: 5":{"0":9,"1":4,"2":8,"3":9,"4":10},"10":{"0":5,"1":6,"2":7,"3":9,"4":3},"5":{"0":8,"1":null,"2":"end","3":3,"4":null},"end":{"0":"end","1":2,"2":null,"3":"end","4":6},"Unnamed: 9":{"0":null,"1":"end","2":null,"3":null,"4":8},"Unnamed: 10":{"0":null,"1":null,"2":null,"3":null,"4":"end"}}
+{
+ "students": {
+  "Bob Hardy": {
+   "Name Surname": {
+    "marks": [
+     9,
+     8,
+     10,
+     5
+    ],
+    "average_marks": 8.0
+   }
+  },
+  "Ann Dier": {
+   "Name Surname": {
+    "marks": [
+     4,
+     9,
+     5,
+     8
+    ],
+    "average_marks": 6.5
+   }
+  },
+  "Kate Rose": {
+   "Name Surname": {
+    "marks": [
+     6,
+     8,
+     4,
+     6,
+     2
+    ],
+    "average_marks": 5.2
+   }
+  },
+  "Jane Winks": {
+   "Name Surname": {
+    "marks": [
+     5,
+     5,
+     8,
+     7
+    ],
+    "average_marks": 6.25
+   }
+  },
+  "Toby Celso": {
+   "Name Surname": {
+    "marks": [
+     9,
+     9,
+     9,
+     3
+    ],
+    "average_marks": 7.5
+   }
+  },
+  "Danny  Alli": {
+   "Name Surname": {
+    "marks": [
+     10,
+     3,
+     6,
+     8
+    ],
+    "average_marks": 6.75
+   }
+  }
+ }
+}
