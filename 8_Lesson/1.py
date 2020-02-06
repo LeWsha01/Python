@@ -10,17 +10,7 @@ class Student:
     subjects: typing.List[str] = field(default_factory=list, repr=False, compare=False)
 
     def __post_init__(self):
-        if self.name is not None:
-            self.first_letter = None
-        else:
-            self.first_letter = self.name[0]
-
-
-def in_list(*args):
-    ls = []
-    for arg in args:
-        ls.append(arg)
-    return ls
+        self.first_letter = self.name[0] if self.name else None
 
 
 student = Student('Petya', 6.9)
@@ -29,8 +19,7 @@ student2 = Student('John', 6.2, 19, ['Math', 'History', 'English'])
 student3 = Student('Kate', 7.1, 30)
 student4 = Student('Matt', 3.2, 21, ['Physic', 'Geography'])
 student5 = Student('Julia', 10, 41)
-lst = in_list(student, student1, student2, student3, student4, student5)
-print(sorted(lst))
+print(sorted([student, student1, student2, student3, student4, student5]))
 """                 [Student(name='Matt', average_mark=3.2), 
                     Student(name='John', average_mark=6.2), 
                     Student(name='Petya', average_mark=6.9), 

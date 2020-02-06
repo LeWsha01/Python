@@ -6,7 +6,7 @@ class Corrective:
     def __new__(cls, *args, **kwargs):
         name, parents, attrs = args
         new_attr = {}
-        new_name = 'Decorated' + name.title()
+        new_name = f'Decorated {name.title()}'
         for at, value in attrs.items():
             if name in at:
                 new_attr[at] = value
@@ -14,13 +14,13 @@ class Corrective:
                 continue
             elif isfunction(value):
                 lst = list(inspect.signature(value).parameters.keys())
-                if 'self' in lst and len(lst) == 1:
+                if lst == ['self']:
                     if 'get_' in at:
                         at = str(at).replace('get_', '')
                     new_attr[at] = property(value)
-                elif 'cls' in lst:
+                elif lst and lst[0] == 'cls':
                     new_attr[at] = classmethod(value)
-                elif 'cls' and 'self' not in lst:
+                elif not lst or lst[0] not in ['self', 'cls']:
                     new_attr[at] = staticmethod(value)
                 else:
                     new_attr[at] = value
