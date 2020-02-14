@@ -1,9 +1,9 @@
-class ErrorConnect(Exception):
-    def __init__(self, text):
-        self.text = text
+def get_data_from_uri(resp):
 
+    """
+    Method for obtaining data on exchange rates from the NBRB website
+    """
 
-def uri_link(resp):
     currents = resp.json()
     result = []
     for key in currents:
