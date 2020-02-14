@@ -2,7 +2,7 @@ def calculation(first_cur, second_cur, how_m, currency):
     """
     Method for working with transferred data for currency calculation
     :param first_cur:  # first abbreviation
-    :param second_cur: # first abbreviation
+    :param second_cur: # second abbreviation
     :param how_m: # transfer amount
     :param currency: # list of currencies we work with
     :return: # get the answer
