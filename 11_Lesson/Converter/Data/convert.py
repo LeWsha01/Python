@@ -2,7 +2,7 @@
 from converter.data.calculate import calculation
 
 
-def convert_data(cur):
+def convert_data(cur, userid):
     """
     Method for filtering and selecting a specific user currency
     :param cur:  # list of currencies we work with
@@ -38,7 +38,7 @@ def convert_data(cur):
 
         if flag:
             money = int(input(f'How much to convert from {f_cur.upper()} to {s_cur.upper()}?\n'))
-            print(calculation(f_cur, s_cur, money, cur))
+            print(calculation(f_cur, s_cur, money, cur, userid))
             input('Press Enter')
             flag = False
         else:
