@@ -1,4 +1,3 @@
-
 def calculation(first_cur, second_cur, how_m, currency):
     """
     Method for working with transferred data for currency calculation
@@ -12,23 +11,18 @@ def calculation(first_cur, second_cur, how_m, currency):
     first_money = 0
     second_money = 0
     for_one = 0
-
-    # Based on if the first currency BYN
     if first_cur.upper() == 'BYN':
         for key in currency:
             if key['Abbreviation'] == second_cur.upper():
                 second_money = key['BYN']
         return f'Conversion from {how_m} {first_cur.upper()} to {second_cur.upper()} completed: ' \
                f'{round(how_m / second_money, 4)} {second_cur.upper()}'
-
-    # Based on if the second currency BYN
     elif second_cur.upper() == 'BYN':
         for key in currency:
             if key['Abbreviation'] == first_cur.upper():
                 first_money = key['BYN']
         return f'Conversion from {how_m} {first_cur.upper()} to {second_cur.upper()} completed: ' \
                f'{round(first_money * how_m, 4)} {second_cur.upper()}'
-
     else:
         for key in currency:
             if key['Abbreviation'] == first_cur.upper():
