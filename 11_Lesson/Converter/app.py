@@ -1,5 +1,7 @@
+#!/usr/bin/env python3
+
 from converter.data import menu
-from converter.data import __version__
+from converter import __version__
 
 
 if __name__ == '__main__':

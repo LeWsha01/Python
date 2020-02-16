@@ -16,5 +16,5 @@ def log_in(login):
             print('OK!')
             return True
     else:
-        print('This login is not found.')
+        print('This login or password is not found.')
         return False

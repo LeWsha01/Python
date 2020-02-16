@@ -26,8 +26,8 @@ def menu():
             try:
                 os.system('clear')
                 inter_menu = int(input('\t\t\t===CONVERTER==='
-                                       '\n\t\t1. Log in'
-                                       '\n\t\t2. Sig in'
+                                       '\n\t\t1. Register'
+                                       '\n\t\t2. Login'
                                        '\n\t\t3. Exit\n'))
                 if inter_menu == 1:
                     os.system('clear')
