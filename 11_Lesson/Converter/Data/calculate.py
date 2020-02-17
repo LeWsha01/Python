@@ -21,10 +21,7 @@ def calculation(first_cur, second_cur, how_m, currency, id):
         for key in currency:
             if key['Abbreviation'] == second_cur.upper():
                 second_money = key['BYN']
-        session.add(History(first_cur.upper(), how_m, second_cur.upper(), round(how_m / second_money, 4), id[0]))
-        session.commit()
-        return f'Conversion from {how_m} {first_cur.upper()} to {second_cur.upper()} completed: ' \
-               f'{round(how_m / second_money, 4)} {second_cur.upper()}'
+        total = round(how_m / second_money, 4)
 
     # Based on if the second currency BYN
     elif second_cur.upper() == 'BYN':
@@ -32,10 +29,7 @@ def calculation(first_cur, second_cur, how_m, currency, id):
             if key['Abbreviation'] == first_cur.upper():
                 for_one = key['How many units']
                 first_money = key['BYN']
-        session.add(History(first_cur.upper(), how_m, second_cur.upper(), round(first_money * how_m, 4), id[0]))
-        session.commit()
-        return f'Conversion from {how_m} {first_cur.upper()} to {second_cur.upper()} completed: ' \
-               f'{round(first_money / for_one * how_m, 4)} {second_cur.upper()}'
+        total = round(first_money / for_one * how_m, 4)
 
     else:
         for key in currency:
@@ -44,8 +38,10 @@ def calculation(first_cur, second_cur, how_m, currency, id):
                 first_money = key['BYN']
             elif key['Abbreviation'] == second_cur.upper():
                 second_money = key['BYN']
-        session.add(History(first_cur.upper(), how_m, second_cur.upper(),
-                            round(first_money / for_one * how_m / second_money, 4), id[0]))
-        session.commit()
-        return f'Conversion from {how_m} {first_cur.upper()} to {second_cur.upper()} completed: ' \
-               f'{round(first_money / for_one * how_m / second_money, 4)} {second_cur.upper()}'
+        total = round(first_money / for_one * how_m / second_money, 4)
+
+    session.add(History(first_cur.upper(), how_m, second_cur.upper(), total, id[0]))
+    session.commit()
+
+    return f'Conversion from {how_m} {first_cur.upper()} to {second_cur.upper()} completed: ' \
+           f'{total} {second_cur.upper()}'

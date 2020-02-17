@@ -7,9 +7,7 @@ def log_in(login):
     :param login:
     :return:
     """
-    all_login = [instance.login for instance in session.query(User).all()]
-
-    if login in all_login:
+    if session.query(User.login).filter(User.login == login).count():
         password = input('Enter password: ')
         password_user = [instance.password for instance in session.query(User.password).filter_by(login=login)]
         if password in password_user:

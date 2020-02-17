@@ -1,3 +1,4 @@
+import http
 
 import requests
 import os
@@ -11,7 +12,7 @@ from converter.db.models import User, session
 
 # We store in a constant variable a link to the exchange rates of the NBRB website
 
-RESPONSE = requests.get('http://www.nbrb.by/API/ExRates/Rates?Periodicity=0')
+uri = 'http://www.nbrb.by/API/ExRates/Rates?Periodicity=0'
 
 
 def menu():
@@ -19,8 +20,8 @@ def menu():
     Interactive program menu for working with the user.
     """
 
-    if RESPONSE.status_code == 200:
-        main_menu = req.get_data_from_uri(RESPONSE)
+    if requests.get(uri).status_code == http.HTTPStatus.OK:
+        main_menu = req.get_data_from_uri(uri)
         flag_1 = True
         while flag_1:
             try:
