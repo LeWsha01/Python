@@ -11,7 +11,7 @@ def registration():
     new_login = input('Enter your login: ')
     new_password = input('Enter your password: ')
     print()
-    if session.query(User.login).filter(User.login == new_login).count():
+    if session.query(User.login).filter(User.login != new_login).count() == 1:
         session.add(User(new_name, new_surname, new_login, new_password))
         session.commit()
 
