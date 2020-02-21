@@ -1,4 +1,4 @@
-from converter.db.models import History, session
+from app.data.db.models import History, session
 
 
 def calculation(first_cur, second_cur, how_m, currency, id):

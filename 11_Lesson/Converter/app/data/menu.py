@@ -3,11 +3,12 @@ import http
 import requests
 import os
 import pandas
-from converter.data import convert
-from converter.data import req
-from converter.data.login import log_in
-from converter.data.register import registration
-from converter.db.models import User, session
+from app.data import convert
+from app.data import req
+from app.data.login import log_in
+from app.data.register import registration
+from app.data.db.models import User, session
+from app import __version__
 
 
 # We store in a constant variable a link to the exchange rates of the NBRB website
@@ -26,6 +27,7 @@ def menu():
         while flag_1:
             try:
                 os.system('clear')
+                print(f'Version: {__version__}')
                 inter_menu = int(input('\t\t\t===CONVERTER==='
                                        '\n\t\t1. Register'
                                        '\n\t\t2. Login'

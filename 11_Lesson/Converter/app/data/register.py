@@ -1,4 +1,4 @@
-from converter.db.models import User, session
+from app.data.db.models import User, session
 
 
 def registration():

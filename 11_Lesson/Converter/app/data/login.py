@@ -1,4 +1,4 @@
-from converter.db.models import User, session
+from app.data.db.models import User, session
 
 
 def log_in(login):
@@ -16,4 +16,3 @@ def log_in(login):
     else:
         print('This login or password is not found.')
         return False
-    

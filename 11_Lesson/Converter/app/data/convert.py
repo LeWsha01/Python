@@ -1,5 +1,5 @@
 
-from converter.data.calculate import calculation
+from app.data.calculate import calculation
 
 
 def convert_data(cur, userid):
