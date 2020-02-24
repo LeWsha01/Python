@@ -1,4 +1,4 @@
-from app.data.db.models import User, session
+from converter.app.data.db.models import User, session
 
 
 def log_in(login):
@@ -11,8 +11,9 @@ def log_in(login):
         password = input('Enter password: ')
         password_user = [instance.password for instance in session.query(User.password).filter_by(login=login)]
         if password in password_user:
-            print('OK!')
             return True
     else:
         print('This login or password is not found.')
         return False
+
+
