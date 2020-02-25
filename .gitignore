@@ -1,15 +1,13 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-.idea/
+*.pyc
+*~
+__pycache__
+_pycache_
+myvenv
+*.sqlite
+/static
 .DS_Store
-venv/
-=======
+htmlcov
+.coverage
+.cache
 .idea
-.DS_Store
-
->>>>>>> develop
-=======
-.idea
-.DS_Store
-
->>>>>>> develop
+venv
