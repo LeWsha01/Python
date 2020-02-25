@@ -1,56 +1,43 @@
-from sqlalchemy import Column, Integer, String, create_engine, ForeignKey, Float
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
-
-engine = create_engine('postgresql://localhost:5432/currency', echo=True)
-
-Base = declarative_base()
-
-Session = sessionmaker(bind=engine)
-session = Session()
+from app import db, login
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import UserMixin
 
 
-class User(Base):
+class User(UserMixin, db.Model):
     __tablename__ = 'users'
-    id = Column(Integer, primary_key=True)
-    name = Column(String(50), nullable=False)
-    surname = Column(String(50), nullable=False)
-    login = Column(String(50), nullable=False)
-    password = Column(String(50), nullable=False)
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(64), nullable=False)
+    surname = db.Column(db.String(64), nullable=False)
+    login = db.Column(db.String(64), index=True, unique=True, nullable=False)
+    email = db.Column(db.String(120), index=True, unique=True, nullable=False)
+    password = db.Column(db.String(128), index=True, nullable=False)
 
-    def __init__(self, name, surname, login, password):
-        self.name = name
-        self.surname = surname
-        self.login = login
-        self.password = password
+    def set_password(self, password):
+        self.password = generate_password_hash(password)
 
-
-class Currency(Base):
-    __tablename__ = 'currency'
-    id = Column(Integer, primary_key=True)
-    name_currency = Column(String(50), unique=True, nullable=False)
-    abbreviation = Column(String(3), unique=True, nullable=False)
-    copyright_currency_abb = Column(Integer, ForeignKey('users.id'), nullable=True)
-
-    def __init__(self, name_currency, abbreviation, copyright_currency_abb = None):
-        self.name_currency = name_currency
-        self.abbreviation = abbreviation
-        self.copyright_currency_abb = copyright_currency_abb
+    def check_password(self, password):
+        return check_password_hash(self.password, password)
 
 
-class History(Base):
-    __tablename__ = 'histor_of_users'
-    operation_id = Column(Integer, primary_key=True)
-    what_abb = Column(String(3), nullable=False)
-    how_much = Column(Integer, nullable=False)
-    to_abb = Column(String(3), nullable=False)
-    total = Column(Integer, nullable=False)
-    user_id = Column(Integer, ForeignKey('users.id'), nullable=False)
+class Money(db.Model):
+    __tablename__ = 'money'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(64), nullable=False)
+    abbreviation = db.Column(db.String(3), unique=True, nullable=False)
+    price = db.Column(db.Float, nullable=False)
+    cur_scale = db.Column(db.Integer, nullable=False)
 
-    def __init__(self, what_abb, how_much, to_abb, total, user_id):
-        self.what_abb = what_abb
-        self.how_much = how_much
-        self.to_abb = to_abb
-        self.total = total
-        self.user_id = user_id
 
+class History(db.Model):
+    __tablename__ = 'history'
+    id = db.Column(db.Integer, primary_key=True)
+    first_currency = db.Column(db.String(3), nullable=False)
+    how_much = db.Column(db.Float, nullable=False)
+    second_currency = db.Column(db.String(3), nullable=False)
+    total = db.Column(db.Float, nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+
+
+@login.user_loader
+def load_user(id):
+    return User.query.get(int(id))

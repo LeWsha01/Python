@@ -1,48 +1,37 @@
-from app.models import session, History
+from app import db
+from app.models import Money, History
 
 
-def calculation(first_cur, second_cur, how_m, currency, id):
+def calculation(first_cur, how_m, second_cur, user_id):
     """
     Method for working with transferred data for currency calculation
     :param first_cur:  # first abbreviation
     :param second_cur: # second abbreviation
     :param how_m: # transfer amount
-    :param currency: # list of currencies we work with
-    :param currency: # Id of user
+    :param user_id: # Id of user
     :return: # get the answer
     """
 
-    first_money = 0
-    second_money = 0
-    for_one = 0
+    first = Money.query.filter_by(abbreviation=first_cur).first()
+    second_money = Money.query.filter_by(abbreviation=second_cur).first()
 
     # Based on if the first currency BYN
     if first_cur.upper() == 'BYN':
-        for key in currency:
-            if key['Abbreviation'] == second_cur.upper():
-                second_money = key['BYN']
-        total = round(how_m / second_money, 4)
+        total = round(how_m / second_money.price * second_money.cur_scale, 2)
 
     # Based on if the second currency BYN
     elif second_cur.upper() == 'BYN':
-        for key in currency:
-            if key['Abbreviation'] == first_cur.upper():
-                for_one = key['How many units']
-                first_money = key['BYN']
-        total = round(first_money / for_one * how_m, 4)
+        total = round(first.price / first.cur_scale * how_m, 2)
 
     else:
-        for key in currency:
-            if key['Abbreviation'] == first_cur.upper():
-                for_one = key['How many units']
-                first_money = key['BYN']
-            elif key['Abbreviation'] == second_cur.upper():
-                second_money = key['BYN']
-        total = round(first_money / for_one * how_m / second_money, 4)
+        total = round(first.price / first.cur_scale * how_m / second_money.price, 2)
 
-    session.add(History(first_cur.upper(), how_m, second_cur.upper(), total, id))
-    session.commit()
+    history = History(first_currency=first_cur.upper(),
+                      how_much=how_m,
+                      second_currency=second_cur.upper(),
+                      total=total,
+                      user_id=user_id)
+    db.session.add(history)
+    db.session.commit()
 
-    return f'Conversion from {how_m} {first_cur.upper()} to {second_cur.upper()} completed: ' \
-           f'{total} {second_cur.upper()}'
-
+    return total

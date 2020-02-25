@@ -1,29 +1,16 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends "base.html" %}
 
 {% block content %}
-<h1 align="center">Hello <p style="color: deepskyblue">{{ user }}</p></h1>
-<h2 align="center" style="color:red">It's converter. Please fill in all the fields</h2>
-<div align="left">
-    {% for key in currency: %}
-    <p style="font-size: 12px; color:red">{{ key['Abbreviation'] }} - {{ key['Name']}}</p>
-    {% endfor %}
-    <div align="center">
-        <form action="" method="post">
-            {{ form.hidden_tag() }}
-            <p style="color: blue">
-                <b>{{ form.first_cur.label }}</b>
-                {{ form.first_cur(size=3) }}<br>
-            </p>
-            <p style="color: blue">
-                <b>{{ form.how_much.label }}</b>
-                {{ form.how_much(size=10) }}<br>
-            </p>
-            <p style="color: blue">
-                <b>{{ form.second_cur.label }}</b>
-                {{ form.second_cur(size=3) }}<br>
-            </p>
-            <p>{{ form.submit() }}</p>
-        </form>
-    </div>
-</div>
+    <h1 align="center" style="color: blue">Hi, {{ current_user.login }}!</h1>
+    <p align="center" style="color: blue">This is my first site. It's converter of currency</p>
 {% endblock %}
+
+</body>
+</html>
