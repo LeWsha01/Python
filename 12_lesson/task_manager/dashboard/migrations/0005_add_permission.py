@@ -1,8 +1,6 @@
 from django.contrib.auth.models import Permission, Group
 from django.db import migrations
-
 from dashboard import apps
-
 
 
 def add_permissions(apps, schema_editor):
@@ -13,13 +11,12 @@ def add_permissions(apps, schema_editor):
 
     manager_group.permissions.add(*all_permission)
     developer_group.permissions.add(*permission_to_dev)
-    print(Permission.objects.all())
 
 
 class Migration(migrations.Migration):
     dependencies = [
         ('auth', '0011_update_proxy_permissions'),
-        ('dashboard', '0002_create_group'),
+        ('dashboard', '0004_add_user_to_group'),
     ]
 
     operations = [
