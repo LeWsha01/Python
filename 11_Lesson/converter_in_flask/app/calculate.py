@@ -24,7 +24,7 @@ def calculation(first_cur, how_m, second_cur, user_id):
         total = round(first.price / first.cur_scale * how_m, 2)
 
     else:
-        total = round(first.price / first.cur_scale * how_m / second_money.price, 2)
+        total = round(first.price / first.cur_scale * how_m / (second_money.price / second_money.cur_scale), 2)
 
     history = History(first_currency=first_cur.upper(),
                       how_much=how_m,
